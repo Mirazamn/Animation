@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+body {
+    width: 80%;
+    margin: 100px auto;
+}
+
+
+/* Main */
+.card {
+    width:  200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    animation-name: box-mover;
+    animation-duration: 5s;
+}
+
+
+@keyframes box-mover {
+    0% {
+        left: 0;
+        top: 0;
+        background-color: red;
+    }
+
+
+    25% {
+        left: 80%;
+        top: 0;
+        background-color: aqua;
+    }
+
+
+    50% {
+        left: 80%;
+        top: 500px;
+        background-color: yellow;
+    }
+
+
+    80% {
+        left: 0;
+        top: 500px;
+        background-color: green;
+    }
+
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
